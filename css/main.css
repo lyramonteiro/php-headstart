@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: gainsboro;
+  font-family: sans-serif;
+}
+.page__header h1 {
+  max-width: calc(1200px - 48px);
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 36px 24px;
+  background-color: #FFF;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #0E0C0F;
+}
+.page__footer {
+  max-width: calc(1200px - 48px);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  background-color: #FFF;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #0E0C0F;
+}
+.main__cards {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.main__cards .person__card {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #FFF;
+}
+.main__cards .person__card .cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+}
+.main__cards .person__card .name {
+  color: #0E0C0F;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.main__cards .person__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0 0 #780516;
+}
+.page__character__detail {
+  margin-top: 24px;
+}
+.page__character__detail .error__id {
+  max-width: calc(1200px - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px;
+  background-color: #FFF;
+  text-align: center;
+  color: #0E0C0F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.page__character__detail .error__id .button {
+  padding: 16px 32px;
+  background-color: #780516;
+  color: #FFF;
+  border: none;
+  font-weight: bold;
+  transition: all linear 0.3s;
+}
+.page__character__detail .error__id .button:hover {
+  background: #0E0C0F;
+}
+.page__character__detail .character__detail {
+  max-width: calc(1200px - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.page__character__detail .character__detail .cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+}
